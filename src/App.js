@@ -13,7 +13,7 @@ import {
 import InfoBox from './components/InfoBox';
 import Map from './components/Map';
 import Table from './components/Table';
-import LineGraph from './components/LineGraph';
+// import LineGraph from './components/LineGraph';
 
 import { sortData, prettyPrintStat } from './util';
 
@@ -132,8 +132,8 @@ function App() {
         <CardContent>
           <h3>Live Cases by Country</h3>
           <Table countries={tableData} />
-          <h3 className='app__graphTitle'>Worldwide new {casesType}</h3>
-          <LineGraph className='app__graph' casesType={casesType} />
+          {/* <h3 className='app__graphTitle'>Worldwide new {casesType}</h3>
+          <LineGraph className='app__graph' casesType={casesType} /> */}
         </CardContent>
       </Card>
     </div>
